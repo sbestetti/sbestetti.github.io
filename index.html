@@ -1,46 +1,180 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page Counter</title>
+<html>
+  <head>
+    <title>Sergio Bestetti</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 50px;
-        }
-        .counter {
-            font-size: 24px;
-            margin-top: 20px;
-        }
+      body {
+        font-family: Arial, sans-serif;
+        font-size: 11pt;
+        margin: 40px;
+        line-height: 1.6;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 24pt;
+        margin-bottom: 20px;
+      }
+
+      h2 {
+        border-bottom: 2px solid #444;
+        padding-bottom: 5px;
+        font-size: 20pt;
+        margin-top: 30px;
+      }
+
+      h3 {
+        font-size: 16pt;
+        color: #333;
+        margin-top: 20px;
+      }
+
+      a {
+        color: #007bff;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      ul {
+        padding-left: 25px;
+      }
+
+      strong {
+        color: #222;
+        font-weight: bold;
+      }
+
+      p {
+        margin: 10px 0;
+      }
+
+      h3 strong {
+        color: #007bff;
+        font-size: 14pt;
+      }
+
+      section {
+        margin-bottom: 30px;
+      }
     </style>
-</head>
-<body>
-
-    <h1>Bem-vindo(a)</h1>
-    <div class="counter">
-        Essa página foi vistada <span id="visit-count"></span> vezes.
-    </div>
-
-    <script>
-        // Retrieve visit count from localStorage
-        let visitCount = localStorage.getItem('pageVisits');
-
-        // If no count exists, initialize it to 0
-        if (!visitCount) {
-            visitCount = 0;
-        }
-
-        // Increment the visit count
-        visitCount++;
-
-        // Store the updated count in localStorage
-        localStorage.setItem('pageVisits', visitCount);
-
-        // Display the updated count
-        document.getElementById('visit-count').textContent = visitCount;
-    </script>
-
-</body>
+  </head>
+  <body>
+    <h1 id="sergio-bestetti">Sergio Bestetti</h1>
+    <p>
+      <a href="mailto:sergio@bestetti.net">sergio@bestetti.net</a> | <a href="https://www.linkedin.com/in/sergio-bestetti/">linkedin.com/in/sergio-bestetti</a> | <a href="https://github.com/sbestetti">github.com/sbestetti</a>
+    </p>
+    <h2 id="resumo-profissional">Resumo Profissional</h2>
+    <p>Sou um profissional de Tecnologia da Informação com 25 anos de experiência, incluindo 7 anos no exterior. Tenho especialização em desenvolvimento Python, com forte atuação em automação, integração de sistemas e APIs utilizando frameworks como Flask e FastAPI. Também tenho experiência em arquitetura de sistemas, garantindo escalabilidade, segurança e eficiência nas soluções que projeto. Atuo na interface com clientes de diversos níveis, desde equipes técnicas até C-level, conduzindo revisões técnicas periódicas, suporte estratégico, gestão de contas e melhoria contínua de soluções. Já liderei equipes de desenvolvimento, promovendo boas práticas, oferecendo mentoria e capacitação técnica, além de coordenar a implementação de processos ágeis. Experiência em treinamento e integração de modelos de IA (LLMs), otimizando fluxos de trabalho e automação de atendimento. Além disso, desenvolvi projetos de IoT, conectando dispositivos embarcados a sistemas em nuvem para coleta e análise de dados em tempo real. Sou capaz de traduzir necessidades de negócio em soluções tecnológicas eficientes, garantindo inovação, confiabilidade e alto desempenho em ambientes corporativos e operacionais.</p>
+    <h2 id="formação-acadêmica">Formação Acadêmica</h2>
+    <ul>
+      <li>
+        <strong>Técnico em Processamento de Dados</strong> – COPI/FIAP (Conclusão: 2002)
+      </li>
+      <li>
+        <strong>Bootcamp Java Presencial</strong> – Caelum/Alura (Conclusão: 2016)
+      </li>
+      <li>
+        <strong>Cursando Análise e Desenvolvimento de Sistemas</strong> – Estácio
+      </li>
+    </ul>
+    <h2 id="experiência-profissional">Experiência Profissional</h2>
+    <h3 id="dasa---brasil">DASA - Brasil</h3>
+    <p>
+      <strong>Engenheiro de Automação - CloudOps</strong> (06/2024 - Atual)
+    </p>
+    <ul>
+      <li>Desenvolvimento e automação de processos no time de CloudOps.</li>
+      <li>Implementação de pipelines e otimização de infraestrutura.</li>
+      <li>Integração de sistemas e APIs para aprimorar a eficiência operacional.</li>
+      <li>Monitoramento e suporte a ambientes em nuvem.</li>
+      <li>Criação de ferramentas de autoatendimento para automação de triagem de chamados baseada em IA.</li>
+    </ul>
+    <h3 id="cerc---brasil">CERC - Brasil</h3>
+    <p>
+      <strong>Tech Lead - Automação &amp; Integração</strong> (10/2022 - 04/2024)
+    </p>
+    <ul>
+      <li>Liderança de equipe com 6 desenvolvedores.</li>
+      <li>Implementação de automação de processos e integrações.</li>
+      <li>Desenvolvimento de dashboards e relatórios.</li>
+      <li>Criação e gestão de processos, além de contratação e mentoria de equipe.</li>
+    </ul>
+    <h3 id="twilio---irlanda">Twilio - Irlanda</h3>
+    <p>
+      <strong>Technical Account Manager</strong> (11/2019 - 10/2022)
+    </p>
+    <ul>
+      <li>Suporte a grandes contas na EMEA.</li>
+      <li>Especialista em produtos complexos e integração de sistemas.</li>
+      <li>Desenvolvimento de relatórios automatizados.</li>
+      <li>Manutenção de CSAT acima de 4.6.</li>
+    </ul>
+    <h3 id="distilled-sch---irlanda">Distilled SCH - Irlanda</h3>
+    <p>
+      <strong>Sr. Infrastructure and Support Engineer</strong> (11/2016 - 10/2019)
+    </p>
+    <ul>
+      <li>Gestão de infraestrutura e suporte corporativo.</li>
+      <li>Implantação de sistemas de ticketing e redes.</li>
+      <li>Integração de sistemas utilizando Java, JavaScript/Node e Python.</li>
+    </ul>
+    <h3 id="outras-experiências-relevantes">Outras Experiências Relevantes</h3>
+    <ul>
+      <li>
+        <strong>Spring Mobile Solutions, Brasil</strong> – IT Manager (06/2010 - 03/2015)
+      </li>
+      <li>
+        <strong>Microsoft Brasil (outsourced by Siemens)</strong> – 2nd Level IT Support (04/2005 - 08/2007)
+      </li>
+      <li>
+        <strong>Volkswagen &amp; Audi of America (outsourced by Gedas)</strong> – IT Support, English (03/2004 - 04/2005)
+      </li>
+    </ul>
+    <h2 id="habilidades-técnicas">Habilidades Técnicas</h2>
+    <ul>
+      <li>Python, Java, JavaScript/Node</li>
+      <li>MySQL, PostgreSQL, MongoDB</li>
+      <li>Jira, Confluence, GitHub, Datadog, Docker, Kubernetes</li>
+      <li>REST APIs, Webhooks, Dashboards</li>
+      <li>ESP32, ESP8266, Raspberry Pi</li>
+      <li>Provedores de Nuvem: <ul>
+          <li>Azure: <ul>
+              <li>Functions, OpenAI Services, AKS, MySQL, DevOps, Boards, Repos, EventGrid, BlobStorage, API Management</li>
+            </ul>
+          </li>
+          <li>GCP: <ul>
+              <li>VertexAI Agent Builder, GKE, CloudRun, App Engine, CloudSQL, Pub/Sub</li>
+            </ul>
+          </li>
+          <li>AWS: <ul>
+              <li>EC2, S3, RDS, Lambda</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <h2 id="idiomas">Idiomas</h2>
+    <ul>
+      <li>
+        <strong>Português:</strong> Nativo
+      </li>
+      <li>
+        <strong>Inglês:</strong> Fluente
+      </li>
+    </ul>
+    <h2 id="projetos-e-contribuições">Projetos e Contribuições</h2>
+    <ul>
+      <li>
+        <strong>Bulk SMS Sender:</strong> Desenvolvi uma aplicação web para envio de SMS em massa a partir de arquivos CSV, utilizando a API do Twilio. O projeto está disponível em: <a href="https://github.com/sbestetti/sms-sender">github.com/sbestetti/sms-sender</a>
+      </li>
+      <li>Administração e monitoramento de infraestrutura.</li>
+      <li>Implementação de soluções de análise de dados.</li>
+      <li>Liderança técnica de times.</li>
+    </ul>
+  </body>
 </html>
